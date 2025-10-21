@@ -1,0 +1,27 @@
+---
+openapi: 3.1.0
+paths:
+  /api/example:
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+      summary: Get Examples
+      tags:
+        - Example Resource
+components:
+  securitySchemes:
+    SecurityScheme:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Authentication
+info:
+  title: surfapis API
+  version: 1.0-SNAPSHOT
