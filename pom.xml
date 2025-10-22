@@ -15,6 +15,7 @@
 
         <allure.version>2.30.0</allure.version>
         <aspectj.version>1.9.24</aspectj.version>
+        <jmeter-java-dsl.version>1.25.1</jmeter-java-dsl.version>
     </properties>
 
     <dependencyManagement>
@@ -48,6 +49,11 @@
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.16</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>us.abstracta.jmeter</groupId>
+            <artifactId>jmeter-java-dsl</artifactId>
+            <version>${jmeter-java-dsl.version}</version>
         </dependency>
     </dependencies>
 
